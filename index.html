@@ -1,0 +1,307 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Static LensFlow photographer dashboard HTML and CSS prototype.">
+  <title>LensFlow | Photographer Dashboard Prototype</title>
+
+  <link rel="icon" type="image/png" href="\assets\images\lensflow-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Ephesis&family=Noto+Serif:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <button
+    class="mobile-menu-button"
+    id="mobile-menu-button"
+    type="button"
+    aria-label="Open navigation"
+    aria-controls="photographer-sidebar"
+    aria-expanded="false"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <div class="mobile-logo" id="mobile-logo">
+    <img class="sidebar-icon" src="assets\images\Lensflow_brand_logo-transparent.png" alt="LensFlow Logo" aria-hidden="true">
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop" aria-hidden="true"></div>
+
+  <div class="app-layout">
+
+    <aside class="sidebar" id="photographer-sidebar">
+      <div class="sidebar-logo"><img class="sidebar-icon" src="assets\images\Lensflow_brand_logo-transparent.png" alt="LensFlow Logo" aria-hidden="true"></div>
+
+      <nav aria-label="Photographer navigation">
+        <a class="active" href="#"><img class="nav-icon" src="assets/icons/dashboard.svg" alt="" aria-hidden="true">Dashboard</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/bookings.svg" alt="" aria-hidden="true">Bookings</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/clients.svg" alt="" aria-hidden="true">Clients</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/galleries.svg" alt="" aria-hidden="true">Galleries</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/invoices.svg" alt="" aria-hidden="true">Invoices</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/services.svg" alt="" aria-hidden="true">Services</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/calendar.svg" alt="" aria-hidden="true">Calendar</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/messages.svg" alt="" aria-hidden="true">Messages</a>
+        <a href="#"><img class="nav-icon" src="assets/icons/settings.svg" alt="" aria-hidden="true">Settings</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-profile">
+          <div class="avatar-placeholder">TM</div>
+          <div>
+            <strong>Your Name</strong>
+            <span>Photographer</span>
+          </div>
+        </div>
+        <a href="#"><img class="nav-icon" src="assets/icons/logout.svg" alt="" aria-hidden="true">Logout</a>
+      </div>
+    </aside>
+
+    <main class="photographer-content">
+
+      <header class="topbar">
+        <div class="topbar-search">
+          <img class="%search-icon
+          " src="assets/icons/search.svg" alt="" aria-hidden="true">
+          <input type="text" placeholder="Search..." aria-label="Search">
+        </div>
+
+        <div class="topbar-account">
+          <img class="notification icon-image" src="assets/icons/notifications.svg" alt="" aria-hidden="true">
+          <div class="avatar-placeholder small">TM</div>
+          <div class="account-copy">
+            <strong>Your Name</strong>
+            <span>Photographer</span>
+          </div>
+          <img class="chevron icon-image" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
+        </div>
+      </header>
+
+      <div class="dashboard-page">
+
+        <section class="dashboard-header">
+          <div>
+            <span class="page-label">Welcome back</span>
+            <h1>Hello, Alex</h1>
+            <p>Here is an overview of your photography sessions, galleries and invoices.</p>
+          </div>
+        </section>
+
+        <section class="dashboard-stats" aria-label="Business summary">
+          <article class="stat-card">
+            <div class="stat-icon"><img src="assets/icons/bookings.svg" alt="" aria-hidden="true"></div>
+            <div>
+              <h2>3</h2>
+              <strong>Upcoming Bookings</strong>
+              <span>Scheduled sessions</span>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon"><img src="assets/icons/camera.svg" alt="" aria-hidden="true"></div>
+            <div>
+              <h2>12</h2>
+              <strong>Total Bookings</strong>
+              <span>Your photography sessions</span>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon"><img src="assets/icons/invoices.svg" alt="" aria-hidden="true"></div>
+            <div>
+              <h2>$450.00</h2>
+              <strong>Outstanding</strong>
+              <span>Unpaid invoices</span>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon"><img src="assets/icons/galleries.svg" alt="" aria-hidden="true"></div>
+            <div>
+              <h2>5</h2>
+              <strong>Galleries</strong>
+              <span>Published galleries</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="dashboard-section bookings-section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">Your schedule</span>
+              <h2>Upcoming Bookings</h2>
+            </div>
+            <a href="#" class="text-link"><img src="assets/icons/chevrons-right.svg" alt="View all" aria-hidden="true">VIEW ALL</a>
+          </div>
+
+          <div class="booking-list">
+            <article class="booking-row">
+              <div class="booking-date">
+                <strong>15</strong>
+                <span>Sep</span>
+              </div>
+              <div class="booking-client">
+                <strong>Portrait Session</strong>
+                <span>10:00 - 11:30</span>
+              </div>
+              <div class="booking-status">
+                <span class="status status-confirmed">Confirmed</span>
+              </div>
+              <div class="booking-amount">$150.00</div>
+            </article>
+
+            <article class="booking-row">
+              <div class="booking-date">
+                <strong>28</strong>
+                <span>Sep</span>
+              </div>
+              <div class="booking-client">
+                <strong>Family Session</strong>
+                <span>14:00 - 16:00</span>
+              </div>
+              <div class="booking-status">
+                <span class="status status-pending">Pending</span>
+              </div>
+              <div class="booking-amount">$250.00</div>
+            </article>
+
+            <article class="booking-row">
+              <div class="booking-date">
+                <strong>12</strong>
+                <span>Oct</span>
+              </div>
+              <div class="booking-client">
+                <strong>Wedding Consultation</strong>
+                <span>10:00 - 11:00</span>
+              </div>
+              <div class="booking-status">
+                <span class="status status-confirmed">Confirmed</span>
+              </div>
+              <div class="booking-amount">$0.00</div>
+            </article>
+          </div>
+        </section>
+
+        <div class="dashboard-lower-grid">
+
+          <section class="dashboard-section">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Your photos</span>
+                <h2>Recent Galleries</h2>
+              </div>
+              <a href="#" class="text-link"><img src="assets/icons/chevrons-right.svg" alt="View all" aria-hidden="true">VIEW ALL</a>
+            </div>
+
+            <div class="gallery-list">
+              <article class="gallery-row">
+                <div class="image-placeholder">
+                  <span></span>
+                </div>
+                <div class="gallery-info">
+                  <strong>Tarryn &amp; James</strong>
+                  <span>Wedding Day Highlights</span>
+                </div>
+                <span class="status status-confirmed">Available</span>
+              </article>
+
+              <article class="gallery-row">
+                <div class="image-placeholder">
+                  <span></span>
+                </div>
+                <div class="gallery-info">
+                  <strong>Smith Family</strong>
+                  <span>Family Portraits</span>
+                </div>
+                <span class="status status-confirmed">Available</span>
+              </article>
+
+              <article class="gallery-row">
+                <div class="image-placeholder">
+                  <span></span>
+                </div>
+                <div class="gallery-info">
+                  <strong>Maternity Session</strong>
+                  <span>Studio Session</span>
+                </div>
+                <span class="status status-confirmed">Available</span>
+              </article>
+
+              <article class="gallery-row">
+                <div class="image-placeholder">
+                  <span></span>
+                </div>
+                <div class="gallery-info">
+                  <strong>Engagement Shoot</strong>
+                  <span>Rotorua Lakes</span>
+                </div>
+                <span class="status status-confirmed">Available</span>
+              </article>
+            </div>
+          </section>
+
+          <section class="dashboard-section">
+            <div class="section-heading">
+              <div>
+                <span class="eyebrow">Payments</span>
+                <h2>Outstanding Invoices</h2>
+              </div>
+              <a href="#" class="text-link"><img src="assets/icons/chevrons-right.svg" alt="View all" aria-hidden="true">VIEW ALL</a>
+            </div>
+
+            <div class="invoice-list">
+              <article class="invoice-row">
+                <div class="invoice-icon"><img src="assets/icons/invoices.svg" alt="" aria-hidden="true"></div>
+                <div class="invoice-info">
+                  <strong>INV-2026-015</strong>
+                  <span>Due 20 Sep 2026</span>
+                </div>
+                <div class="invoice-amount">
+                  <strong>$150.00</strong>
+                  <span class="status status-pending">Sent</span>
+                </div>
+              </article>
+
+              <article class="invoice-row">
+                <div class="invoice-icon"><img src="assets/icons/invoices.svg" alt="" aria-hidden="true"></div>
+                <div class="invoice-info">
+                  <strong>INV-2026-012</strong>
+                  <span>Due 05 Oct 2026</span>
+                </div>
+                <div class="invoice-amount">
+                  <strong>$200.00</strong>
+                  <span class="status status-overdue">Overdue</span>
+                </div>
+              </article>
+
+              <article class="invoice-row">
+                <div class="invoice-icon"><img src="assets/icons/invoices.svg" alt="" aria-hidden="true"></div>
+                <div class="invoice-info">
+                  <strong>INV-2026-010</strong>
+                  <span>Due 15 Oct 2026</span>
+                </div>
+                <div class="invoice-amount">
+                  <strong>$100.00</strong>
+                  <span class="status status-pending">Sent</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
