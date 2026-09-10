@@ -163,8 +163,9 @@ h2 {
 
   color: #d8d2c9;
 
-  font-family: var(--font-body);
-  font-size: 22px;
+  font-family: var(--font-navigation);
+  font-size: 20px;
+  letter-spacing: 1.6px;
   text-decoration: none;
 
   transition:
