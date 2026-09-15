@@ -1008,7 +1008,7 @@ body.menu-open {
   }
 
   .booking-row {
-    grid-template-columns: 64px minmax(0, 1fr) auto;
+    grid-template-columns: 64px minmax(0, 1fr) auto auto;
 
     gap: 10px;
   }
@@ -1018,11 +1018,7 @@ body.menu-open {
   }
 
   .booking-amount {
-    grid-column: 2 / -1;
-
-    margin-top: -8px;
-
-    text-align: left;
+    text-align: right;
   }
 }
 
@@ -1073,7 +1069,7 @@ body.menu-open {
   }
 
   .booking-row {
-    grid-template-columns: 52px minmax(0, 1fr);
+    grid-template-columns: 52px minmax(0, 1fr) auto auto;
 
     align-items: start;
 
@@ -1091,29 +1087,18 @@ body.menu-open {
 
   .booking-status,
   .booking-amount {
-    grid-column: 2;
     justify-self: start;
-  }
-
-  .booking-amount {
-    margin-top: 0;
   }
 
   .gallery-row {
-    grid-template-columns: 50px minmax(0, 1fr);
-  }
-
-  .gallery-row .status {
-    grid-column: 2;
-    justify-self: start;
+    grid-template-columns: 50px minmax(0, 1fr) auto;
   }
 
   .invoice-row {
-    grid-template-columns: 36px minmax(0, 1fr);
+    grid-template-columns: 36px minmax(0, 1fr) auto;
   }
 
   .invoice-amount {
-    grid-column: 2;
     align-items: flex-start;
   }
 
