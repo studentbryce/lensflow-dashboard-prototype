@@ -461,6 +461,11 @@ h2 {
   font-size: 17px;
 }
 
+.stat-icon img,
+.invoice-icon img {
+  filter: brightness(0) saturate(100%) invert(42%) sepia(12%) saturate(705%) hue-rotate(356deg) brightness(89%) contrast(88%);
+}
+
 .stat-card h2 {
   margin-bottom: -1px;
 
